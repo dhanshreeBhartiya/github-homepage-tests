@@ -1,12 +1,18 @@
 {
     "compilerOptions": {
-      "target": "ES6",
-      "module": "commonjs",
+      "target": "es6",
       "lib": ["es6", "dom"],
+      "module": "commonjs",
       "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    },
-    "include": ["**/*.ts"],
-    "exclude": ["node_modules"]
-  }
+      "strict": true,
+      "noImplicitAny": false,
+      "types": ["cypress"],
+      "baseUrl": "./",
+      "paths": {
+        "@integration/*": ["cypress/integration/*"],
+        "@fixtures/*": ["cypress/fixtures/*"]
+    }   
+},
+"include": ["cypress/**/*.ts"]
+}
+  
