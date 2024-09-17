@@ -4,9 +4,10 @@
   "description": "This project contains automated tests for the GitHub homepage using Cypress and TypeScript.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --browser chrome",
+    "test": "cypress run",
     "test:headless": "cypress run --headless",
-    "cypress:open": "ts-node -r tsconfig-paths/register node_modules/.bin/cypress open"
+    "test:ci": "cypress run --browser chrome",
+    "open": "cypress open"
   },
   "keywords": [],
   "author": "",
