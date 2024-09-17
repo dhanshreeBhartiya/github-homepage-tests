@@ -1,4 +1,5 @@
 // cypress/support/commands.ts
+import '@percy/cypress';
 // <reference path="./index.d.ts" />
 Cypress.Commands.add('login', (username: string, password: string) => {
   cy.visit('/login');

@@ -6,13 +6,13 @@
       "esModuleInterop": true,
       "strict": true,
       "noImplicitAny": false,
-      "types": ["cypress"],
+      "typeRoots": ["node_modules/@types"],
+      "types": ["cypress", "node"],
       "baseUrl": "./",
       "paths": {
         "@integration/*": ["cypress/integration/*"],
         "@fixtures/*": ["cypress/fixtures/*"]
-        // "@support/*": ["cypress/support/*"]
-    }   
+      }
 },
 "include": [
   "cypress/**/*.ts",

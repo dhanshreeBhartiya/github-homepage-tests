@@ -9,10 +9,6 @@ export default defineConfig({
   env: envConfig,
   e2e: {
     baseUrl: 'https://github.com',
-    // defaultCommandTimeout: 10000,  // Increased default timeout
-    // setupNodeEvents(on, config) {
-    //   // Node event listeners go here if needed
-    // },
     specPattern: 'cypress/integration/**/*.spec.ts',
     supportFile: 'cypress/support/e2e.ts',
   },
