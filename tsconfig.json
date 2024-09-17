@@ -11,8 +11,13 @@
       "paths": {
         "@integration/*": ["cypress/integration/*"],
         "@fixtures/*": ["cypress/fixtures/*"]
+        // "@support/*": ["cypress/support/*"]
     }   
 },
-"include": ["cypress/**/*.ts"]
+"include": [
+  "cypress/**/*.ts",
+  "cypress/support/*.ts", // Add this to include custom type declarations
+  "cypress/support/*.*.ts"
+  ]
 }
   

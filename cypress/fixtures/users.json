@@ -1,0 +1,10 @@
+[
+    {
+        "username": "octocat",
+        "expectedRepos": 8
+    },
+    {
+        "username": "torvalds",
+        "expectedRepos": 7
+    }
+]
