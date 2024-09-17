@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 describe('GitHub Homepage Tests', () => {
-
     beforeEach(() => {
       cy.visit('/');
     });
